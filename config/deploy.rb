@@ -48,7 +48,7 @@ set :linked_files, %w{config/database.yml
                       private2.pem}
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w{log pg_data vendor/assets/components}
+set :linked_dirs, %w{log pg_data vendor/assets/components public/assets}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
