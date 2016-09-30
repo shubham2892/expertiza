@@ -13,11 +13,14 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/chruby
 #   https://github.com/capistrano/bundler
 #   https://github.com/capistrano/rails
-#
+# 
 # require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
-# require 'capistrano/bundler'
+
+# capistrano includes below three things, we do not run precompile each time.
+require 'capistrano/bundler'
+# Uncomment this line only precompile needed.
 # require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
